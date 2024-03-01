@@ -2,4 +2,5 @@
 cd /etc/ansible
 rm -rf ansible-playbook
 git clone https://github.com/d700qt/ansible-playbook.git
+ansible-galaxy install -r ansible-playbook/requirements.yml
 ansible-playbook /etc/ansible/ansible-playbook/site.yml
