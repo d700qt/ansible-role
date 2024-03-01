@@ -1,2 +1,4 @@
 ---
 # tasks file for ansible-role
+- include: 1_initial_setup.yml
+- include: 2_install_software.yml
