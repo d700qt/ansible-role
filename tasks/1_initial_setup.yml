@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  tasks:
+    - name: get hostname
+      command: hostname
+      register: hostname
+
+    - name: write_run_ansible_script
+      template:
+        src: run-ansible.sh.j2
+        dest: ~/run-ansible.sh
+        mode: 755
