@@ -10,7 +10,7 @@ inspec_exec_config__json:
       file: "./report.yaml"
       stdout: false
     json-min:
-      file: "{{ inspec_exec_reporter_json_min_file }}"
+      file: "./report-min.json"
       stdout: false
     html2:
       file: "./report.html2"
