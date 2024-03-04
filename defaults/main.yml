@@ -3,30 +3,22 @@ inspec_version: 4.52.9
 inspec_exec_folder: ~/inspec
 
 inspec_exec_config__json:
-{
-    "reporter": {
-        "cli": {
-            "stdout": true
-        },
-        "html2": {
-            "file": "./report.html2",
-            "stdout": false
-        },
-        "json": {
-            "file": "./report.json",
-            "stdout": false
-        },
-        "json-min": {
-            "file": "./report-min.json",
-            "stdout": false
-        },
-        "junit2": {
-            "file": "./report.junit2",
-            "stdout": false
-        },
-        "yaml": {
-            "file": "./report.yaml",
-            "stdout": false
-        }
-    }
-}
+  reporter:
+    cli:
+      stdout: true
+    yaml:
+      file: "./report.yaml"
+      stdout: false
+    json-min:
+      file: "{{ inspec_exec_reporter_json_min_file }}"
+      stdout: false
+    html2:
+      file: "./report.html2"
+      stdout: false
+    junit2:
+      file: "./report.junit2"
+      stdout: false
+    json:
+      file: "./report.json"
+      stdout: false
+
