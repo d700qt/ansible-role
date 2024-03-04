@@ -21,4 +21,3 @@ inspec_exec_config__json:
     json:
       file: "./report.json"
       stdout: false
-

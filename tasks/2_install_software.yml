@@ -13,7 +13,7 @@
 
 - name: Create inspec directory
   file: 
-    path: "{{ {{ inspec_exec_folder }} }}"
+    path: "{{ inspec_exec_folder }}"
     state: directory
 
 - name: Write inspec config file
