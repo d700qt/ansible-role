@@ -10,3 +10,8 @@
     state: present
     disable_gpg_check: true  # Disable GPG signature check
   become: true
+
+- name: Write inspec config file
+  template:
+    src: "{{ config.json.j2 }}"
+    destination: "{{ inspec_exec_folder }}/config.json"
