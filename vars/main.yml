@@ -1,3 +1,23 @@
 ---
-# vars file for ansible-role
   inspec_version: 4.52.9
+  inspec_exec_folder: ~/inspec
+  inspec_exec_cmd: inspec exec --insecure
+  inspec_exec_config__json:
+    reporter:
+      cli:
+        stdout: true
+      yaml:
+        file: "./report.yaml"
+        stdout: false
+      json-min:
+        file: "./report-min.json"
+        stdout: false
+      html2:
+        file: "./report.html2"
+        stdout: false
+      junit2:
+        file: "./report.junit2"
+        stdout: false
+      json:
+        file: "./report.json"
+        stdout: false
