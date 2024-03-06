@@ -1,0 +1,2 @@
+Default variables for the role. These variables have the lowest priority of any variables available and can be easily overridden by any other variable, including inventory variables.
+See https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_variables.html#understanding-variable-precedence
