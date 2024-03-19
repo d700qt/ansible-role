@@ -8,3 +8,9 @@
     src: run-ansible.sh.j2
     dest: ~/run-ansible.sh
     mode: 755
+
+- name: write_run_inspec_script
+  template:
+    src: run-inspec.sh.j2
+    dest: ~/run-inspec.sh
+    mode: 755
