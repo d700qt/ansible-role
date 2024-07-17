@@ -1,7 +1,7 @@
 ---
-- name: get hostname
-  command: hostname
-  register: hostname
+# - name: get hostname
+#   command: hostname
+#   register: hostname
 
 - name: write_run_ansible_script
   template:
