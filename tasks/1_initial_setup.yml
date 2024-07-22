@@ -14,3 +14,9 @@
     src: run-inspec.sh.j2
     dest: ~/run-inspec.sh
     mode: 755
+
+- name: write_test_var_file
+  template:
+    src: test_var_file.yml.j2
+    dest: ~/test_var_file.yml
+    mode: 755
