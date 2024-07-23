@@ -15,8 +15,16 @@
     dest: ~/run-inspec.sh
     mode: 755
 
+# Example of writing yml file and including it as ansible vars
 - name: write_test_var_file
   template:
     src: test_var_file.yml.j2
-    dest: "{{ inspec_exec_directory }}/test_var_file.yml"
+    dest: "test_var_file.yml"
     mode: 755
+
+- name: include_test_file_vars
+  include_vars: "{{ inspec_exec_directory }}/test_var_file.yml"
+
+- name: show_var_file_contents
+  debug:
+    msg: "{{ level1 }}"
