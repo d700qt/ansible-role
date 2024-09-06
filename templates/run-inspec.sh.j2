@@ -1,3 +1,3 @@
 #!/bin/bash
 cd {{ inspec_exec_directory }}/{{ inspec_profiles_directory }}/inspec-tests-main
-{{ inspec_exec_cmd }} --config {{ inspec_exec_directory }}/config.json --waiver-file waivers.yml --log-level debug --no-distinct-exit .
+{{ inspec_exec_cmd }} --config {{ inspec_exec_directory }}/config.json --waiver-file waivers.yml --waiver-file waivers2.yml --log-level debug --no-distinct-exit .
