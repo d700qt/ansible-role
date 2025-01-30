@@ -1,5 +1,6 @@
 ---
   inspec_version: 4.52.9
+  rhel_version: 8 # Associated rhel version for inspec rpm, forms part of the download URL path
   # inspec_exec_folder: ~/inspec
   inspec_exec_cmd: inspec exec --insecure
   inspec_exec_config__json:
