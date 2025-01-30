@@ -2,7 +2,7 @@
 - name: Download RPM package
   get_url:
     url: "https://downloads.cinc.sh/files/stable/cinc-auditor/{{ inspec_version }}/el/{{ rhel_version }}/cinc-auditor-{{ inspec_version }}-1.el{{ rhel_version }}.x86_64.rpm"
-    dest: /tmp/cinc-auditor-{{ inspec_version }}-1.el9.x86_64.rpm
+    dest: /tmp/cinc-auditor-{{ inspec_version }}-1.el{{ rhel_version }}.x86_64.rpm
 
 - name: Install inspec from RPM
   yum:
