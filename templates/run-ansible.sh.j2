@@ -4,4 +4,4 @@ rm -rf ansible-playbook
 rm -rf ~/.ansible/roles/ansible-role
 git clone https://github.com/d700qt/ansible-playbook.git
 ansible-galaxy install -r ansible-playbook/requirements.yml
-ansible-playbook /etc/ansible/ansible-playbook/site.yml
+ansible-playbook /etc/ansible/ansible-playbook/site.yml -e "inspec_version={{ inspec_version }}" rhel_version={{ rhel_version }}"
